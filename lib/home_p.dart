@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
  *  TODO : get isteği kısmı  */  
 
  Future GetTeams() async{
-  var response = await http.get(Uri.https('testapi1.herokuapp.com','/teams'));
+  var response = await http.get(Uri.https('nbateamapi.onrender.com','/teams'));
   var jsonData = jsonDecode(response.body);
 
   for (var eachteam in jsonData)
